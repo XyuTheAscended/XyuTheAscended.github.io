@@ -1,0 +1,47 @@
+/*Structure*/
+
+head{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 79, 207);
+}
+
+#content{
+    background-color: rgb(0, 200, 255);
+    width:70%;
+    padding:2%;
+    border-radius: 5px;
+}
+
+/*Headers*/
+h1{
+color: rgb(217, 0, 255);
+}
+h2{
+color: rgb(217, 0, 255);
+}
+
+/*Paragraphs*/
+#p1{
+    color: rgb(217, 0, 255);
+}
+
+/*Links*/
+#li1{
+    color: rgb(217, 0, 255);
+}
+
+#li2{
+    color: rgb(217, 0, 255);
+}
+
+#l1{
+    color: rgb(217, 0, 255);
+}
+
+#l2{
+    color: rgb(217, 0, 255);
+}

@@ -32,6 +32,7 @@ color: white;
 /*Links*/
 #li1{
     color: white;
+
 }
 
 #li2{
@@ -40,8 +41,10 @@ color: white;
 
 #l1{
     color: white;
+    text-decoration: none;
 }
 
 #l2{
     color: white;
+    text-decoration: none;
 }

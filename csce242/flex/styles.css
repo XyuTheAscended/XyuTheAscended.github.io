@@ -1,0 +1,90 @@
+body{
+    background: #538701;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    width: 95%;
+    margin: auto;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#main-header{
+    background: #538701;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*Columns*/
+.columns{
+
+}
+
+/*Main Navigation*/
+#main-nav ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#main-nav li{
+    border-bottom: 1px solid white;
+}
+
+#main-nav li:first-child{
+    border-top: 1px solid white;
+}
+
+#main-nav a{
+    color: white;
+    padding: 10px 5px;
+    display:block;
+    text-decoration: none; /*Removes underlines*/
+}
+
+#main-nav a:hover{
+    background: white;
+    color: #538701;
+}
+
+/*Typography*/
+h1{
+    text-align: center;
+}
+
+/*Larger devices*/
+@media only screen and (min-width: 768px){
+body{
+    background: url(images/Trees.webp);
+    background-size: cover;
+}
+    #content{
+        width: 70%;
+    }
+/*Columns*/
+.columns{
+    display:flex;
+    }
+
+    /*Main Nav*/
+    #main-nav li{
+        flex:1;
+    }
+
+    #main-nav li, #main-nav li:first-child{
+        
+        border:none;
+    }
+    
+    #main-nav a{
+        padding:5px;
+    }
+    #main-nav a:hover{
+        background: white;
+        color: #538701;
+        border-bottom:1px solid white;
+        
+    }
+}

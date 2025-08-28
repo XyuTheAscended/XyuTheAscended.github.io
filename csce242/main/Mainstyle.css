@@ -29,6 +29,7 @@ text-align: center;
 }
 h2{
 color: white;
+text-align: center;
 }
 
 /*Paragraphs*/
@@ -68,33 +69,32 @@ color: white;
 }
 
 
+#as1d{
+    background-color: blue;
+}
 
-
+#as2d{
+    background-color: blue;
+}
 
 
 @media only screen and (min-width: 768px){
     .columns{
         display: flex;
-        
-        #main-nav li{
-            flex: 1;
-            padding: 5px;
-        }
+        gap: 30px;
+        padding: 0;
         
         }
 
         #content{
             width: 70%;
         }
-        #desc1{
-            font-size-adjust: 0.5;
-            max-width: 500px;
-            margin: auto;
-            text-align: left;
-        }
-        #desc2{
-            max-width: 500px;
-            margin: auto;
-            padding: 10px;
-        }
+        /*For the lines to separate*/
+       #main-nav li{
+        background-color: blue;
+        padding: 15px;
+        width: 300px;
+        text-align: left;
+        border-radius: 5px;
+       }
 }

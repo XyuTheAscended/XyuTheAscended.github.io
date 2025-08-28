@@ -77,6 +77,13 @@ text-align: center;
 #as2d{
     background-color: blue;
 }
+#main-nav li{
+    background-color: blue;
+    padding: 15px;
+    width: 300px;
+    text-align: left;
+    border-radius: 5px;
+   }
 
 
 @media only screen and (min-width: 768px){

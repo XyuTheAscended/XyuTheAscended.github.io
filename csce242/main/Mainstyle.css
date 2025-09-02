@@ -79,7 +79,7 @@ text-align: center;
 }
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 600px){
     .columns{
         display: flex;
         gap: 30px;

@@ -1,0 +1,189 @@
+/*Main Body*/
+body {
+    background: #f2f0d5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#main-header{
+    background: #f2f0d5;
+    color: #5d878c;
+    border-radius: 5px;
+    padding: 5px;
+}
+#main-content section, #main-content aside{
+    padding:5px;
+}
+.title{
+    background-color: #5d878c;
+    padding:5px;
+    border-radius:5px;
+    margin: 5px;
+    height: 55%;
+}
+
+/*Main navigation*/
+#main-nav ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+#main-nav li{
+    border-bottom: 1px solid white;
+    text-align: center;
+    background-color: #5d878c;
+}
+
+#main-nav li:first-child{
+    border-top: 1px solid white;
+}
+
+#main-nav a{
+    color: white;
+    padding: 10px 5px;
+    display:block;
+    text-decoration: none; /*Removes underlines*/
+    background-color: #d98282;
+}
+
+#main-nav a:hover{
+    background: #d98282;
+    color: white;
+}
+
+aside.one{
+    background: #d98282;
+
+}
+aside a{
+    text-decoration: none;
+    color: white;
+    
+}
+ul{
+    padding-left: 0;
+    list-style-type: none;
+    color: white;
+}
+/*Typography*/
+h1 {
+    text-align: center;
+}
+
+.hide {
+    display:none;
+}
+
+.hide-small {
+    display:none;
+}
+/*Columns*/
+.columns{
+    display: flex;
+    flex: 1;
+}
+.idea{
+    color: #5d878c;
+    border-radius: 5px;
+    margin: 5px;
+    p{
+        font-size: 10px;
+    }
+    padding: 5px;
+}
+.title{
+    color: white;
+    padding: 5px;
+}
+.title section{
+   height: 80%;
+}
+
+.title p{
+    font-size: 10px;
+}
+
+/*Images*/
+
+/*Gallery*/
+#gallery{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #a4bfb8;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 20px;
+}
+#gallery section{
+text-align: center;
+width: 25%;
+padding: 5px;
+gap: 20px;
+border-radius: 10px;
+margin: auto;
+}
+
+/* Larger devices */
+@media only screen and (min-width: 768px) {
+
+    #content {
+        width:70%;
+    }
+
+    /* Columns */
+    .columns {
+        display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .five {
+        flex:5;
+    }
+
+    /* Main Nav */
+    #main-nav li {
+        flex:1;
+        
+    }
+
+    #main-nav li, #main-nav li:first-child {
+        border:none;
+    }
+
+    #main-nav a {
+        text-align: center;
+        padding:5px;
+    }
+
+    #main-nav a:hover {
+        background:white;
+        color:black;
+        border-bottom:1px solid white;
+    }
+
+    .hide-small {
+        display:block;
+    }
+}

@@ -116,6 +116,10 @@ img{
 #Title-List{
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 5px;
+    border-radius: 5px;
+    gap: 20px;
+    flex-basis: 20%;
 }
 
 /*Gallery*/
@@ -126,19 +130,25 @@ img{
     padding: 5px;
     border-radius: 5px;
     gap: 20px;
+    flex-basis: 90%;
 }
 #gallery section{
 text-align: center;
-width: 25%;
+width: 50%;
 padding: 5px;
 gap: 20px;
 border-radius: 10px;
-margin: auto;
+
 background-color: #5d878c;
 }
 
 /* Larger devices */
 @media only screen and (min-width: 768px) {
+
+    #aside1{
+       flex-basis: 20%;
+       max-width: 50px;
+    }
 
     #content {
         width:70%;

@@ -1,26 +1,42 @@
+#content{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width:95%;
+    padding:2%;
+    border-radius: 5px;
+    margin: auto;
+    
+}
+/*Head */
 head{
     text-decoration-color: azure;
 }
+
+/* Body */
 body{
     background-color: black;
     text-decoration-color: azure;
-    
-}
-h1{
-    color: white;
-}
-h2{
-    color: white;
+    background-image: url(images/blacknwhite.webp);
+    background-size: cover;
 }
 
-ol{
-    color: white;
+
+/*Headers*/
+.headers{
+    color: black;
 }
 
+.assignmentlist{
+    color: black
+}
+
+.description{
+    color: black;
+}
+
+/*Links*/
 a{
-    color: white;
-}
-
-p{
-    color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }

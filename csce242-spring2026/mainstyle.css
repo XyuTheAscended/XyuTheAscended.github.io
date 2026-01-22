@@ -25,10 +25,20 @@ body{
 /*Headers*/
 .headers{
     color: black;
+    text-align: center;
 }
 
 .assignmentlist{
-    color: black
+    color: white;
+    padding: 5px;
+    background: black;
+    margin: auto;
+    display: flex;
+}
+
+.assignments{
+    flex: 1;
+    padding: 5px;
 }
 
 .description{
@@ -38,6 +48,21 @@ body{
 /*Links*/
 a{
     text-decoration: none;
-    color: black;
     font-weight: bold;
+}
+#github{
+    color: black;
+}
+
+.assignmentlist li a{
+    color: white;
+}
+
+
+/*Images*/
+img {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    background: white;
 }

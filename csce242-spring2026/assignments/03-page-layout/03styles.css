@@ -1,132 +1,178 @@
-/* ---------- Page ---------- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #eef0db;
+  background-color: #069494;
 }
 
-/* ---------- Header ---------- */
 #pageHeader {
+  background-color: #069494;
+  color: #ffc0cb;
   text-align: center;
-  font-size: 32px;
   font-weight: bold;
-  padding: 20px;
-  background-color: #f3f3cf;
-  color: #5c7f86;
+  font-size: 48px;
+  padding: 28px 10px;
 }
 
-/* ---------- Nav ---------- */
 #mainNav {
+  background-color: #FF8243;
+}
+
+#navList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  background-color: #d87b7b;
 }
 
 .navItem {
   flex: 1;
   text-align: center;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
+  border-right: 2px solid rgba(255, 255, 255, 0.35);
 }
 
-.navItem:hover {
-  background-color: white;
-  color: #d87b7b;   
+.navItem:last-child {
+  border-right: 0;
 }
 
+.navLink {
+  display: block;
+  padding: 14px 0;
+  color: #ffc0cb;
+  font-size: 20px;
+  text-decoration: none;
+}
 
-/* ---------- Content ---------- */
+.navLink:hover {
+  background-color: #ffc0cb;
+  color: #FF8243;
+}
+
 #content {
-  padding: 15px;
+  background-color: #069494;
 }
 
-/* ---------- Top Section ---------- */
 #topSection {
   display: flex;
-  gap: 15px;
+  align-items: stretch;
 }
 
 #importantText {
   flex: 1;
-  background-color: #f3f3cf;
-  padding: 10px;
+  padding: 70px 20px;
+  font-size: 26px;
   font-weight: bold;
-  color: #5c7f86;
+  color: #fce883;
 }
 
 #staffSection {
-  flex: 2;
+  flex: 1.25;
   display: flex;
-  gap: 10px;
+  gap: 18px;
+  padding: 10px 20px 18px 10px;
+  align-items: flex-start;
 }
 
-/* ---------- Staff Cards ---------- */
 .staffCard {
   flex: 1;
-  background-color: #6b8f93;
 }
 
 .staffTitle {
-  background-color: #587b7f;
-  color: white;
+  background-color: #FF8243;
+  color: #ffc0cb;
   text-align: center;
-  padding: 5px;
-  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 0;
 }
 
-.staffImage {
+.staffImgWrap {
   background-color: #a7c1bb;
+  width: 200px;
   height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* ---------- Idea Rows ---------- */
+.staffImgWrap img {
+  display: block;
+  width: 200px;
+  height: 300px;
+}
+
 .ideaRow {
   display: flex;
-  gap: 10px;
-  background-color: #5e8589;
-  margin-top: 15px;
-  padding: 10px;
+  border-top: 6px solid #069494;
 }
 
-.ideaLabel {
-  width: 120px;
-  background-color: #a7c1bb;
-  padding: 10px;
-  font-weight: bold;
+.ideaOdd .ideaBigBlock {
+  width: 280px;
+  background-color: #FF8243;
 }
 
-.ideaText {
-  flex: 1;
-  color: white;
-  padding: 10px;
-}
-
-.ideaImage {
+.ideaOdd .ideaSmallImg {
   width: 200px;
-  background-color: #a7c1bb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #ffc0cb;
 }
 
-/* ---------- Footer ---------- */
+.ideaOdd .ideaText {
+  flex: 1;
+  background-color: #FF8243;
+  color: white;
+  padding: 16px;
+}
+
+.ideaEven .ideaText {
+  flex: 1;
+  background-color: #ffc0cb;
+  color: white;
+  padding: 16px;
+}
+
+.ideaEven .ideaSmallImgDark {
+  width: 200px;
+  background-color: #FF8243;
+}
+
+.ideaEven .ideaRightSpace {
+  width: 280px;
+  background-color: #ffc0cb;
+}
+
+.ideaHeading {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.ideaBody {
+  line-height: 1.25;
+  font-size: 14px;
+}
+
+.ideaSmallImg img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
 #pageFooter {
-  background-color: #d87b7b;
+  background-color: #fce883;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 24px 0;
   font-weight: bold;
-  margin-top: 15px;
+  font-size: 18px;
 }
 
-/* ---------- SMALL SCREEN LAYOUT ---------- */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
-  #mainNav {
+  #navList {
     flex-direction: column;
+  }
+
+  .navItem {
+    border-right: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .navItem:last-child {
+    border-bottom: 0;
   }
 
   #topSection {
@@ -135,14 +181,17 @@ body {
 
   #staffSection {
     flex-direction: column;
+    padding: 10px 20px 20px 20px;
   }
 
   .ideaRow {
     flex-direction: column;
   }
 
-  .ideaLabel,
-  .ideaImage {
+  .ideaOdd .ideaBigBlock,
+  .ideaOdd .ideaSmallImg,
+  .ideaEven .ideaSmallImgDark,
+  .ideaEven .ideaRightSpace {
     width: 100%;
   }
 }

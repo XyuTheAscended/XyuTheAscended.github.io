@@ -21,6 +21,9 @@ body{
     padding: 2%;
 }
 
+.description{
+    color: black;
+}
 
 /*Headers*/
 .headers{
@@ -28,22 +31,34 @@ body{
     text-align: center;
 }
 
+/*Assignments*/
 .assignmentlist{
     color: white;
     padding: 5px;
     background: black;
     margin: auto;
     display: flex;
+    gap: 20px;
 }
 
 .assignments{
     flex: 1;
-    padding: 5px;
+    padding: 2%;
+    text-align: center;
+    background: white;
+    color: black;
+    border: black;
 }
 
-.description{
+.assignments li{
+    padding: 10px;
+}
+
+.assignmentlist li a{
     color: black;
 }
+
+
 
 /*Links*/
 a{
@@ -52,11 +67,9 @@ a{
 }
 #github{
     color: black;
+    text-align: center;
 }
 
-.assignmentlist li a{
-    color: white;
-}
 
 
 /*Images*/
@@ -64,5 +77,36 @@ img {
     width: 200px;
     height: 200px;
     padding: 5px;
-    background: white;
+    background: black;
+}
+
+/*List style*/
+ol{
+    list-style-type: none;
+}
+
+/* Small screen layout: stack the assignments vertically*/
+@media (max-width: 800px) {
+  .assignmentlist{
+    flex-direction: column;   
+    align-items: center;      
+    padding: 20px;            
+  }
+
+  .assignments{
+    width: 100%;              
+    max-width: 500px;         
+  }
+
+
+  img{
+    width: 100%;              
+    height: auto;             
+  }
+
+
+  ol.assignmentlist{
+    padding-left: 0;
+    margin: 0;
+  }
 }

@@ -58,7 +58,33 @@ body{
     color: black;
 }
 
+/*Project*/
+#projectlist{
+    color: white;
+    padding: 5px;
+    background: black;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
 
+.projects li{
+    padding: 10px;
+}
+
+.projects a{
+    text-decoration: none;
+    color: black;
+}
+
+.projects{
+    flex: 1;
+    padding: 2%;
+    text-align: center;
+    background: white;
+    color: black;
+    border: black;
+}
 
 /*Links*/
 a{
@@ -69,6 +95,8 @@ a{
     color: black;
     text-align: center;
 }
+
+
 
 
 

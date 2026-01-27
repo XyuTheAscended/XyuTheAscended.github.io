@@ -14,6 +14,7 @@ body{
 
 #main-header{
     background: whitesmoke;
+    position: relative;
 }
 
 #main-content{
@@ -22,6 +23,73 @@ body{
 
 #main-footer{
 
+}
+
+/*Links*/
+
+/*Header*/
+#logo{
+    margin: 10px;
+}
+
+#login-nav{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+#login-nav li:after{
+    content:"|"
+}
+
+/*Images*/
+img{
+    max-width: 100%;
+}
+
+/*Square*/
+.area{
+    position: relative;
+}
+
+.arrow{
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    top: 35%;
+}
+
+#prev{
+    left:5%;
+}
+
+#next {
+    right:5%;
+}
+
+#slide-desc{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    padding: 5px;
+    max-width: 40%;
+}
+
+#square{
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    
+    /*Position absolute is in respect to the upper left hand corner */
+    position:absolute;
+    top: 50px;
+    left: 50px;
+   
+}
+/*Area*/
+.area {
+    background: grey;
 }
 
 /*Gallery*/
@@ -38,22 +106,21 @@ body{
 }
 
 /* Navigation */
-#main-nav{
+nav{
     
 }
 
-#main-nav ul{
+nav ul{
     padding-left: 0;
 }
 
-#main-nav li{
+nav li{
     list-style-type: none;
     background: white;
     padding: 5px;
     border-bottom: 1px solid;
 }
-
-#main-nav a{
+nav a{
     text-decoration: none;
 }
 /* Typography */
@@ -65,6 +132,11 @@ body{
 
 /*Larger Devices*/
 @media (min-width: 768px) {
+    #main-content{
+        justify-content: space-between;
+        gap: 10px;
+    }
+
     .columns{
         display: flex;
     }
@@ -85,21 +157,21 @@ body{
         flex:4;
     }
 
-    #main-nav ul {
+    nav ul {
         display:flex;
     }
 
-    #main-nav li{
+    nav li{
         background: transparent;
         flex:1;
     }
 
-    #main-nav a{
+    nav a{
         color: darkslateblue;
         border-bottom: 1px solid transparent;
     }
 
-    #main-nav a:hover {
+    nav a:hover {
         border-bottom: 1px solid darkslateblue;
     }
     

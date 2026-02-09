@@ -1,53 +1,54 @@
+/*Main Content*/
 #content{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    width:95%;
-    padding:2%;
+    width: 95%;
+    padding: 2%;
     border-radius: 5px;
     margin: auto;
-    
-}
-/*Head */
-head{
-    text-decoration-color: azure;
 }
 
-/* Body */
+/*Body*/
 body{
     background-color: black;
-    text-decoration-color: azure;
     background-image: url(images/blacknwhite.webp);
     background-size: cover;
     padding: 2%;
 }
 
+/*Text*/
 .description{
     color: black;
 }
 
-/*Headers*/
+/* Headers */
 .headers{
     color: black;
     text-align: center;
 }
 
-/*Assignments*/
+/*ASSIGNMENTS*/
+
 .assignmentlist{
-    color: white;
-    padding: 5px;
+    list-style-type: none;
     background: black;
+    padding: 20px;
     margin: auto;
+
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .assignments{
-    flex: 1;
-    padding: 2%;
+    flex: 1 1 250px; 
+    max-width: 300px;
+    padding: 20px;
     text-align: center;
+
     background: white;
     color: black;
-    border: black;
 }
 
 .assignments li{
@@ -56,16 +57,32 @@ body{
 
 .assignmentlist li a{
     color: black;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-/*Project*/
+/*PROJECT*/
+
 #projectlist{
-    color: white;
-    padding: 5px;
+    list-style-type: none;
     background: black;
+    padding: 20px;
     margin: auto;
+
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+}
+
+.projects{
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+
+    background: white;
+    color: black;
 }
 
 .projects li{
@@ -73,68 +90,44 @@ body{
 }
 
 .projects a{
+    color: black;
+    font-weight: bold;
     text-decoration: none;
-    color: black;
 }
 
-.projects{
-    flex: 1;
-    padding: 2%;
-    text-align: center;
-    background: white;
-    color: black;
-    border: black;
-}
+/*LINKS*/
 
-/*Links*/
 a{
     text-decoration: none;
     font-weight: bold;
 }
+
 #github{
     color: black;
+    display: block;
     text-align: center;
+    margin-bottom: 20px;
 }
 
+/*IMAGES*/
 
-
-
-
-/*Images*/
-img {
-    width: 200px;
-    height: 200px;
+img{
+    max-width: 100%;
+    height: auto;
     padding: 5px;
     background: black;
 }
 
-/*List style*/
-ol{
-    list-style-type: none;
-}
+/*SMALL SCREEN LAYOUT*/
 
-/* Small screen layout: stack the assignments vertically*/
 @media (max-width: 800px) {
-  .assignmentlist{
-    flex-direction: column;   
-    align-items: center;      
-    padding: 20px;            
-  }
+    .assignmentlist,
+    #projectlist{
+        justify-content: center;
+    }
 
-  .assignments{
-    width: 100%;              
-    max-width: 500px;         
-  }
-
-
-  img{
-    width: 100%;              
-    height: auto;             
-  }
-
-
-  ol.assignmentlist{
-    padding-left: 0;
-    margin: 0;
-  }
+    .assignments,
+    .projects{
+        max-width: 90%;
+    }
 }

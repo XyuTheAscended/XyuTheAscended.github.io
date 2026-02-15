@@ -1,0 +1,111 @@
+:root {
+    --primary-color: #4f7c82;
+    --secondary-color: #d06b6b;
+    --background-color: #e8efe6;
+    --content-bg: #ffffff;
+    --border-color: #7aa0a5;
+    --hover-color: #dce8e6;
+}
+
+/* Page */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, "Apple Color Emoji",
+                 "Segoe UI Emoji", "Noto Color Emoji";
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+/* Header */
+header {
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+/* Arrow container */
+.menuBar {
+    text-align: left;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.menuBar span {
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 15px 20px;
+    display: none;
+    text-align: left;
+}
+
+nav ul li {
+    padding: 8px 0;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+nav ul li:hover {
+    background-color: var(--hover-color);
+}
+
+/* Add pipe only on large screens */
+@media (min-width: 768px) {
+    nav ul li:not(:last-child)::after {
+        content: " |";
+    }
+}
+
+/* Main content box */
+main {
+    width: 80%;
+    margin: auto;
+    border: 2px solid var(--border-color);
+    padding: 20px;
+    background-color: var(--content-bg);
+}
+
+/* Hide sections by default */
+section {
+    display: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+/* Large Screens */
+@media (min-width: 768px) {
+
+    .menuBar {
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 0 10px;
+    }
+}

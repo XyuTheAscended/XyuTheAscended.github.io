@@ -12,6 +12,39 @@ body{
   background:#f2e6de;
 }
 
+/* Header */
+header{
+  position:absolute;
+  top:40px;
+  text-align:center;
+  width:100%;
+}
+
+header h1{
+  margin:0;
+  font-size:40px;
+  color:#6c8f8c;
+  font-weight:500;
+}
+
+header h2{
+  margin-top:8px;
+  font-size:26px;
+  color:#d98c8c;
+  font-weight:400;
+}
+
+/* Footer */
+footer{
+  position:absolute;
+  bottom:30px;
+  width:100%;
+  text-align:center;
+  font-size:18px;
+  color:#6c8f8c;
+}
+
+
 /*Bowl*/
 .bowl{
   position:relative;

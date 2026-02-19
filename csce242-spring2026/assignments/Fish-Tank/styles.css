@@ -1,0 +1,65 @@
+/*
+Bowl/rim idea from CSS ellipse techniques:
+https://css-tricks.com/the-shapes-of-css/
+*/
+
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f2e6de;
+}
+
+/*Bowl*/
+.bowl{
+  position:relative;
+  width:600px;
+  height:420px;
+  border-radius:50% / 45%;
+  border:14px solid rgba(255,255,255,0.75); 
+  background:transparent;
+  box-sizing:border-box;
+}
+
+/*Top of bowl*/
+.top{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  top:-35px;
+  width:560px;
+  height:90px;
+  border-radius:50%;
+  border:5px solid rgba(255,255,255,0.85);
+  background:transparent;
+  z-index:10; 
+  pointer-events:none;
+}
+
+/* Water inside bowl */
+.water{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  top:70px;
+  width:540px;
+  height:320px;
+  border-radius:50% / 45%;
+  background:linear-gradient(#66b7e5,#2f95cd);
+  overflow:hidden;
+}
+
+/* bubble container */
+.bubbles{
+  position:absolute;
+  inset:0;
+}
+
+/* bubbles */
+.bubble{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(210,235,255,0.8);
+}

@@ -1,28 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Genres</title>
-    <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <div id="website">
-            <!--TopNav-->
-    <header id="topbar">
-    <h1>Game Grouper</h1>
-    <nav id="topnav">
-    <ul>
-      <li><a href="/csce242-spring2026/project/part1/homepage/Navigation/About/index.html">About Us</a></li>
-      <li><a href="#">Genres</a></li>
-      <li><a href="/csce242-spring2026/project/part1/homepage/Navigation/Deals/index.html">Deals</a></li>
-      <li><a href="/csce242-spring2026/project/part1/homepage/Navigation/Browse Games/index.html">Browse Games</a></li>
-      <li><a href="/csce242-spring2026/project/part1/homepage/Navigation/Devlogs/index.html">Developer Logs</a></li>
-    </ul>
-    </nav>
-    
-    </header>
-    </div>
-    </body>
-    <footer>
+<head>
+  <title>Game Grouper - Genres</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-    </footer>
+<body>
+  <div id="website">
+
+    <header id="topbar">
+      <h1>
+        <a id="HomeT" href="../../index.html">Game Grouper</a>
+      </h1>
+
+      <nav id="topnav">
+        <ul>
+          <li><a href="../About/index.html">About Us</a></li>
+          <li><a href="#">Genres</a></li>
+          <li><a href="../Deals/index.html">Deals</a></li>
+          <li><a href="../Browse/index.html">Browse Games</a></li>
+          <li><a href="../Devlogs/index.html">Developer Logs</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- DESKTOP ARROW -->
+    <button id="desktopArrow" type="button">◄</button>
+
+    <!-- MOBILE -->
+    <button id="sidebarToggle" type="button">▼ Menu</button>
+
+    <div id="pagelayout">
+
+      <!-- SIDEBAR (same as other pages) -->
+      <aside id="sidebar">
+
+        <h2>POPULAR TAGS</h2>
+        <ul>
+          <li><a href="../Browse/index.html">Horror games</a></li>
+          <li><a href="../Browse/index.html">Multiplayer</a></li>
+          <li><a href="../Browse/index.html">Visual novels</a></li>
+          <li><a href="../Browse/index.html">Simulation</a></li>
+          <li><a href="../Browse/index.html">Roguelike</a></li>
+          <li><a href="#">Browse all tags →</a></li>
+        </ul>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main id="maincontent">
+        
+        <div id="login">
+          <a href="../Login-Signup/index.html">Login</a> | <a href="../Login-Signup/index.html">Signup</a>
+        </div>
+
+        <section id="genresGrid">
+
+          <div class="genreBox">
+            <img src="../../images/Rogue.png">
+            <h3>ROGUELIKE</h3>
+          </div>
+
+          <div class="genreBox">
+            <img src="../../images/indie.png">
+            <h3>INDIE</h3>
+          </div>
+
+          <div class="genreBox">
+            <img src="../../images/Horror.png">
+            <h3>HORROR</h3>
+          </div>
+
+          <div class="genreBox">
+            <img src="../../images/multi.png">
+            <h3>MULTIPLAYER</h3>
+          </div>
+
+          <div class="genreBox">
+            <img src="../../images/single.png">
+            <h3>SINGLEPLAYER</h3>
+          </div>
+
+          <div class="genreBox">
+            <img src="../../images/cod.png">
+            <h3>FPS</h3>
+          </div>
+
+          <div class="genreBox">
+            <img src="../../images/rpg.png">
+            <h3>RPG</h3>
+          </div>
+
+          <div class="genreBox">
+            <img src="../../images/3D.png">
+            <h3>3D</h3>
+          </div>
+
+          <div class="genreBox">
+            <img src="../../images/mario.png">
+            <h3>2D</h3>
+          </div>
+
+        </section>
+
+      </main>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

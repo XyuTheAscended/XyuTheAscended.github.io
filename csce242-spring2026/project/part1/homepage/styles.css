@@ -1,25 +1,27 @@
-/* colors */
 :root {
   --black: #000000;
   --yellow: #ffff00;
   --red: #b30000;
 }
 
-/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* body */
 body {
-  background-color: var(--black);
+  background-color: var(--yellow);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
-/* header */
+#website {
+  background-color: var(--yellow);
+  width: 100%;
+}
+
+/*Header*/
 #topbar {
   background-color: var(--black);
   color: var(--yellow);
@@ -28,19 +30,17 @@ body {
   width: 100%;
 }
 
-#HomeT{
+#HomeT {
   color: var(--yellow);
   text-decoration: none;
 }
 
-/* title */
 #topbar h1 {
   font-size: 34px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-/* navbar across */
 #topnav {
   width: 100%;
 }
@@ -50,7 +50,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 8px 0 14px 0;
@@ -60,25 +59,27 @@ body {
   color: var(--yellow);
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-/* page layout wrapper */
+/*Page Layout*/
 #pagelayout {
   padding: 0 20px 20px 20px;
+  background-color: var(--yellow);
 }
 
-/* sidebar */
+/*Sidebar*/
 #sidebar {
   background-color: var(--red);
   color: var(--yellow);
   padding: 20px;
   margin-bottom: 20px;
+  transition: width 0.3s ease, padding 0.3s ease;
 }
 
 #sidebar h2 {
   margin: 18px 0 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -93,17 +94,16 @@ body {
 #sidebar a {
   color: var(--yellow);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
-/* main content yellow */
+/*Main content*/
 #maincontent {
   background-color: var(--yellow);
   padding: 0;
 }
 
-/* login bar on yellow */
 #login {
   background-color: var(--yellow);
   color: var(--black);
@@ -118,9 +118,8 @@ body {
   font-weight: bold;
 }
 
-/* video preview */
+/*Video preview*/
 #videopreview {
-  background-color: var(--yellow);
   padding: 14px 18px 18px 18px;
 }
 
@@ -131,29 +130,29 @@ body {
   padding: 14px;
 }
 
-/* featured title */
+/*Featured*/
 #featuredtitle {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding: 14px 18px;
   font-weight: bold;
   color: var(--black);
 }
 
 #featuredtitle h2 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 #featuredtitle a {
   color: var(--black);
   text-decoration: none;
   border: 2px solid var(--black);
-  padding: 3px 8px;
+  padding: 3px 10px;
   font-weight: bold;
 }
 
-/* games layout */
+/*Games*/
 #gameslayout {
   display: flex;
   flex-direction: column;
@@ -161,7 +160,6 @@ body {
   padding: 0 18px 18px 18px;
 }
 
-/* game boxes */
 .gamebox {
   background-color: var(--red);
   color: var(--yellow);
@@ -172,6 +170,7 @@ body {
 
 .gamebox h3 {
   margin-bottom: 10px;
+  font-size: 22px;
 }
 
 .gamebox img {
@@ -180,13 +179,54 @@ body {
   margin: 10px 0;
 }
 
-/* desktop */
+/*Arrow*/
+#desktopArrow {
+  display: none;
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  background-color: var(--black);
+  color: var(--yellow);
+  border: none;
+  padding: 8px 12px;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/*Smaller screens*/
+#sidebarToggle {
+  display: none;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--yellow);
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #sidebarToggle {
+    display: block;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  #sidebar.show {
+    display: block;
+  }
+}
+
+/*Desktop*/
 @media (min-width: 768px) {
 
   #pagelayout {
     display: flex;
-    gap: 0;                 
-    padding: 0 0 20px 0;    
+    gap: 0;
+    padding: 0 0 20px 0;
   }
 
   #sidebar {
@@ -194,11 +234,20 @@ body {
     margin-bottom: 0;
   }
 
+  #sidebar.closed {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #sidebar.closed + #maincontent {
+    flex: 1;
+  }
+
   #maincontent {
     flex: 1;
   }
 
-  /* gaming boxes */
   #gameslayout {
     flex-direction: row;
   }
@@ -207,7 +256,11 @@ body {
     flex: 1;
   }
 
-  #yt{
+  #desktopArrow {
+    display: block;
+  }
+
+  #yt {
     max-width: 1900px;
     max-height: 600px;
   }

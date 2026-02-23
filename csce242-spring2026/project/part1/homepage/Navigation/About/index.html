@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <div id="website">
-            <!--TopNav-->
+<head>
+  <title>Game Grouper - About</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="website">
+
     <header id="topbar">
-    <h1>Game Grouper</h1>
-    <nav id="topnav">
-    <ul>
-      <li><a href="#">About Us</a></li>
-      <li><a href="/csce242-spring2026/project/part1/homepage/Navigation/Genres/index.html">Genres</a></li>
-      <li><a href="/csce242-spring2026/project/part1/homepage/Navigation/Deals/index.html">Deals</a></li>
-      <li><a href="/csce242-spring2026/project/part1/homepage/Navigation/Browse Games/index.html">Browse Games</a></li>
-      <li><a href="/csce242-spring2026/project/part1/homepage/Navigation/Devlogs/index.html">Developer Logs</a></li>
-    </ul>
-    </nav>
+      <h1><a id="HomeT" href="../../index.html">Game Grouper</a></h1>
+      <nav id="topnav">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="../Genres/index.html">Genres</a></li>
+          <li><a href="../Deals/index.html">Deals</a></li>
+          <li><a href="../Browse/index.html">Browse Games</a></li>
+          <li><a href="../Devlogs/index.html">Developer Logs</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!--Page Layout-->
-    <div id="pagelayout">
-      <!--Sidebar-->
-      <aside id="sidebar">
+    <button id="desktopArrow" type="button">◄</button>
+    <!-- MOBILE TOGGLE -->
+    <button id="sidebarToggle" type="button">▼ Menu</button>
 
+    <div id="pagelayout">
+
+      <aside id="sidebar">
+        <!-- SAME SIDEBAR CONTENT -->
         <h2>POPULAR TAGS</h2>
         <ul>
-          <li><a href="#">Browser games</a></li>
-          <li><a href="#">Horror games</a></li>
-          <li><a href="#">Multiplayer</a></li>
-          <li><a href="#">Visual novels</a></li>
-          <li><a href="#">Simulation</a></li>
-          <li><a href="#">Roguelike</a></li>
-          <li><a href="#">Browse all tags →</a></li>
+          <li><a href="../Browse/index.html">Horror games</a></li>
+          <li><a href="../Browse/index.html">Multiplayer</a></li>
+          <li><a href="../Browse/index.html">Visual novels</a></li>
+          <li><a href="../Browse/index.html">Simulation</a></li>
+          <li><a href="../Browse/index.html">Roguelike</a></li>
+          <li><a href="../Genres/index.html">Browse all tags →</a></li>
         </ul>
-
-        <h2>BROWSE</h2>
-        <ul>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Game Assets</a></li>
-          <li><a href="#">Physical Games</a></li>
-          <li><a href="#">Randomizer</a></li>
-        </ul>
-
-        <h2>GAMES BY PRICE</h2>
-        <ul>
-          <li><a href="#">On Sale</a></li>
-          <li><a href="#">Free Games</a></li>
-          <li><a href="#">With Demo</a></li>
-          <li><a href="#">$5 or Less</a></li>
-          <li><a href="#">$15 or Less</a></li>
-        </ul>
-
       </aside>
-            <!-- main content -->
+
       <main id="maincontent">
+
         <div id="login">
-        <a href="#">Login</a> | <a href="#">Signup</a>
+          <a href="../Login-Signup/index.html">Login</a> | <a href="../Login-Signup/index.html">Signup</a>
         </div>
 
-        <h2>About Game Grouper</h2>
-        <div id="about">
-          <p>Random info</p>
-          <img><!--Prob a slideshow of images.-->
-          <p>More info</p>
-        </div>
+        <section class="about-hero">
+          <h2>About Game Grouper</h2>
+          <p>Game Grouper is a website ran by one person named Tyler Norman. This website is something I thought would be cool to make considering that I like websites with game and information on games. I hope this website can become enjoyable to you and take care!</p>
+        </section>
+
+        <section class="about-grid">
+          <div class="about-box">
+            <h3>My Mission</h3>
+            <p>My mission for this website is to ensure that the user is pleased with the products and material on the website for videogames. If the mission is not met then it is not complete.</p>
+          </div>
+
+          <div class="about-box">
+            <h3>What I Offer</h3>
+            <p>I offer many games ranging from different categories that I know people would enjoy. I hope the joy I have in games can bring joy to the user!</p>
+          </div>
+
+          <div class="about-box">
+            <h3>My Community</h3>
+            <p>Join my community and make sure you tune in to the latest news on my website for updates on new games or even sales!</p>
+          </div>
+        </section>
+
       </main>
     </div>
-    </div>
-    </body>
-    <footer>
+  </div>
 
-    </footer>
+  <script src="script.js"></script>
+</body>
 </html>

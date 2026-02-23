@@ -1,0 +1,208 @@
+
+:root {
+  --black: #000000;
+  --yellow: #ffff00;
+  --red: #b30000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--yellow);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+#website {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*Header*/
+#topbar {
+  background-color: var(--black);
+  color: var(--yellow);
+  padding: 18px 20px 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#HomeT {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+#topbar h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* NAVBAR */
+#topnav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 0 14px 0;
+}
+
+#topnav a {
+  color: var(--yellow);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*Arrow*/
+#desktopArrow {
+  display: none;
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  background-color: var(--black);
+  color: var(--yellow);
+  border: none;
+  padding: 8px 12px;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/*Page layout*/
+#pagelayout {
+  flex: 1;
+  display: flex;
+  background-color: var(--yellow);
+}
+
+/*Sidebar*/
+#sidebar {
+  background-color: var(--red);
+  color: var(--yellow);
+  padding: 20px;
+  width: 260px;
+  min-height: 100%;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+#sidebar.closed {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#sidebar h2 {
+  margin: 18px 0 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#sidebar ul {
+  list-style: none;
+}
+
+#sidebar li {
+  margin-bottom: 10px;
+}
+
+#sidebar a {
+  color: var(--yellow);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*Main content*/
+#maincontent {
+  flex: 1;
+  background-color: var(--yellow);
+}
+
+/* LOGIN */
+#login {
+  text-align: right;
+  padding: 15px 25px;
+  font-weight: bold;
+}
+
+#login a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+
+/*About*/
+.about-hero {
+  background-color: var(--black);
+  color: var(--yellow);
+  padding: 40px;
+  margin: 30px;
+  text-align: center;
+}
+
+.about-grid {
+  display: flex;
+  gap: 30px;
+  padding: 0 30px 40px 30px;
+}
+
+.about-box {
+  flex: 1;
+  background-color: var(--red);
+  color: var(--yellow);
+  padding: 25px;
+}
+
+
+/*Smaller screens*/
+#sidebarToggle {
+  display: none;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--yellow);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+
+  #pagelayout {
+    flex-direction: column;
+  }
+
+  #sidebarToggle {
+    display: block;
+  }
+
+  #sidebar {
+    width: 100%;
+    display: none;
+  }
+
+  #sidebar.show {
+    display: block;
+  }
+
+  .about-grid,
+  #gameslayout,
+  .page-grid {
+    flex-direction: column;
+  }
+
+}
+
+/*Desktop*/
+@media (min-width: 768px) {
+  #desktopArrow {
+    display: block;
+  }
+}

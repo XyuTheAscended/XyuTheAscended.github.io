@@ -43,7 +43,6 @@ document.getElementById("txt-num-days").onchange = (e) => {
 const p =document.getElementById("p-count-display");
 let count = 0;
 let countInterval;
-
 const startButton = document.getElementById("btn-start-count");
 
 startButton.onclick = () => {
@@ -51,21 +50,21 @@ startButton.onclick = () => {
         startButton.disabled = true;
         p.innerHTML = count++;
     },500);
-}
+};
 
 document.getElementById("btn-pause-count").onclick = () => {
+    startButton.disabled = false;
     clearInterval(countInterval);
-
-}
+};
 
 document.getElementById("btn-stop-count").onclick = () => {
- startButton.disabled = false;   
- count = 0;
- clearInterval(countInterval);
-}
+    startButton.disabled = false;
+    count = 0;
+    clearInterval(countInterval);
+};
 
-/*Display the date*/
-setInterval(() => {
+/* Display the date */
+setInterval(()=>{
     const today = new Date();
     const month = today.getMonth();
     const day = today.getDay();
@@ -73,23 +72,26 @@ setInterval(() => {
     const seconds = today.getSeconds();
     const minutes = today.getMinutes();
     const hours = today.getHours();
-    document.getElementById("p-date").innerHTML = `${hours}:${minutes}:${seconds}, ${month}/${day}/${year}`;
-}, 0);
 
+    document.getElementById("p-date").innerHTML = `${hours}:${minutes}:${seconds}, ${month}/${day}/${year}`;
+}, 500);
+
+/* Donations */
 document.getElementById("btn-display-donation").onclick = () => {
     const errorP = document.getElementById("p-donation-error");
-    errorP.innerHTML = ""; //if you click the button twice
+    errorP.innerHTML = "";  //if you click the button twice
 
-   
     const donationText = document.getElementById("txt-donation").value;
 
-        if(isNaN(donationText) || donationText < 0){
-            errorP.innerHTML = "Invalid Amount";
-            return;
-        }
+    if(isNaN(donationText) || donationText < 0){
+        errorP.innerHTML = "* Invalid amount";
+        return;
+    }
 
-        donation = parseInt(donationText);
-        const percentGoal = donation/5000 * 100;
-        
-        document.getElementById("p-donation").innerHTML = `You've reached ${percentGoal}% of your goal.`
+    donation = parseInt(donationText);
+    const percentGoal = donation/5000 * 100;
+
+    document.getElementById("p-donation").innerHTML = `You've reached ${percentGoal}% of your goal.`
+
+    document.querySelector(":root").style.setProperty("--donation",percentGoal + "%");
 }

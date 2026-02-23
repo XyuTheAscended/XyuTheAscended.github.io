@@ -1,0 +1,95 @@
+:root {
+    --primary-color: #4f7c82;
+    --secondary-color: #d06b6b;
+    --background-color: #e8efe6;   /* tan/greenish background */
+    --content-bg: #ffffff;
+    --border-color: #7aa0a5;
+    --hover-color: #dce8e6;
+}
+
+/* Page */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+/* Headings */
+h1 {
+    color: var(--primary-color);
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Mood row */
+label {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+select {
+    padding: 6px 10px;
+    font-size: 16px;
+
+    background-color: var(--content-bg);
+    color: var(--primary-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+
+    outline: none;
+}
+
+select:focus {
+    border-color: var(--primary-color);
+}
+
+/* Song links */
+#songs {
+    margin-top: 25px;
+}
+
+#songs a {
+    display: block;
+    margin: 14px 0;
+    font-size: 20px;
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#songs a:hover {
+    background-color: var(--hover-color);
+}
+
+/* Video */
+#video {
+    margin-top: 25px;
+    display: none; /* hidden until a song is clicked */
+}
+
+iframe {
+    width: 800px;
+    height: 450px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    padding: 10px;
+    color: var(--secondary-color);
+    font-size: 18px;
+}

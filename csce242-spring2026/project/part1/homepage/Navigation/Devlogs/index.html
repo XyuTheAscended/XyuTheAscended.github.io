@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Game Grouper - Developer Logs</title>
   <link rel="stylesheet" href="styles.css">
@@ -31,13 +32,16 @@
 
         <h2>POPULAR TAGS</h2>
         <ul>
-          <li><a href="../Browse/index.html">Horror games</a></li>
-          <li><a href="../Browse/index.html">Multiplayer</a></li>
-          <li><a href="../Browse/index.html">Visual novels</a></li>
-          <li><a href="../Browse/index.html">Simulation</a></li>
-          <li><a href="../Browse/index.html">Roguelike</a></li>
-          <li><a href="../Genres/index.html">Browse all tags →</a></li>
-        </ul>
+          <li><a href="../Browse/index.html?tag=horror">Horror games</a></li>
+          <li><a href="../Browse/index.html?tag=multiplayer">Multiplayer</a></li>
+          <li><a href="../Browse/index.html?tag=visual">Visual novels</a></li>
+          <li><a href="../Browse/index.html?tag=simulation">Simulation</a></li>
+          <li><a href="../Browse/index.html?tag=roguelike">Roguelike</a></li>
+          <li><a href="../Browse/index.html?tag=all">Browse all tags →</a></li>
+
+          <div class="sidebar-gamepad">
+            <img src="../../images/gamepad.png" alt="Gamepad">
+          </div>
       </aside>
 
       <main id="maincontent">
@@ -47,13 +51,6 @@
         </div>
 
         <h1 id="devlogsTitle">DEVLOGS</h1>
-
-        <div id="sortBar">
-          <span>Sort by:</span>
-          <span class="sortOption">New and Popular</span>
-          <span class="sortOption">Most Recent</span>
-          <span class="sortOption">Most Popular</span>
-        </div>
 
         <section id="devlogsGrid">
 
@@ -107,4 +104,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

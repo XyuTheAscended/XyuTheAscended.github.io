@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Game Grouper - Browse Games</title>
   <link rel="stylesheet" href="styles.css">
@@ -37,14 +38,17 @@
 
         <h2>POPULAR TAGS</h2>
         <ul>
-          <li><a href="#">Horror games</a></li>
-          <li><a href="#">Multiplayer</a></li>
-          <li><a href="#">Visual novels</a></li>
-          <li><a href="#">Simulation</a></li>
-          <li><a href="#">Roguelike</a></li>
-          <li><a href="../Genres/index.html">Browse all tags →</a></li>
+          <li><a href="../Browse/index.html?tag=horror">Horror games</a></li>
+          <li><a href="../Browse/index.html?tag=multiplayer">Multiplayer</a></li>
+          <li><a href="../Browse/index.html?tag=visual">Visual novels</a></li>
+          <li><a href="../Browse/index.html?tag=simulation">Simulation</a></li>
+          <li><a href="../Browse/index.html?tag=roguelike">Roguelike</a></li>
+          <li><a href="../Browse/index.html?tag=all">Browse all tags →</a></li>
         </ul>
 
+        <div class="sidebar-gamepad">
+          <img src="../../images/gamepad.png" alt="Gamepad">
+        </div>
       </aside>
 
       <!-- MAIN -->
@@ -52,6 +56,18 @@
 
         <div id="login">
           <a href="../Login-Signup/index.html">Login</a> | <a href="../Login-Signup/index.html">Signup</a>
+        </div>
+
+        <h1 id="browseTitle">BROWSE GAMES</h1>
+
+        <div id="tagList" style="display:none;">
+          <ul>
+            <li>Horror</li>
+            <li>Multiplayer</li>
+            <li>Visual novels</li>
+            <li>Simulation</li>
+            <li>Roguelike</li>
+          </ul>
         </div>
 
         <section id="browseGrid">
@@ -120,4 +136,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

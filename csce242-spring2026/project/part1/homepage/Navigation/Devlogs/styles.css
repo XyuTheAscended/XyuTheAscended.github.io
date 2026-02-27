@@ -272,6 +272,30 @@ body{
   cursor:pointer;
 }
 
+/*sidebar gamepad image*/
+#sidebar{
+  display:flex;
+  flex-direction:column;
+}
+
+.sidebar-gamepad{
+  margin-top:auto;          /* pushes it to bottom */
+  padding-top:30px;
+  text-align:center;
+}
+
+.sidebar-gamepad img{
+  width:170px;
+  max-width:100%;
+  opacity:0.9;
+  transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sidebar-gamepad img:hover{
+  transform:scale(1.05);
+  opacity:1;
+}
+
 /*auth page layout*/
 #authPage{
   width:100%;

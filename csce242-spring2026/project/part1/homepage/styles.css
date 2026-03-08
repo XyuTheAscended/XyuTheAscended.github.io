@@ -220,7 +220,7 @@ body{
 
 #viewAllBtn{
   text-decoration:none;
-  color:var(--yellow);
+  color: white;
   font-weight:900;
   border:1px solid var(--border);
   padding:8px 14px;
@@ -254,7 +254,16 @@ body{
   border-radius:18px;
   border:1px solid var(--border);
   overflow:hidden;
-  padding:15px;
+  padding:25px;
+  line-height: 1.6;
+}
+
+.about-box h2{
+  margin-bottom:10px;
+}
+
+.about-box img{
+  margin-bottom:15px;
 }
 
 .gamebox img,
@@ -341,6 +350,15 @@ body{
 .authForm label{
   font-weight:800;
   font-size:15px;
+  color:var(--muted);
+}
+
+/*Footer*/
+#footer{
+  margin-top:40px;
+  padding:20px;
+  text-align:center;
+  border-top:1px solid var(--border);
   color:var(--muted);
 }
 
@@ -431,4 +449,14 @@ body{
   .about-grid{
     grid-template-columns:1fr;
   }
+}
+
+@media (max-width:768px){
+
+#topnav ul{
+  flex-direction:column;
+  gap:15px;
+  align-items:center;
+}
+
 }

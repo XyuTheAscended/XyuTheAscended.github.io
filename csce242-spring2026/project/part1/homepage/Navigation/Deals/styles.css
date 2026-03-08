@@ -248,7 +248,11 @@ body{
 .genreBox,
 .browseBox,
 .devlogBox,
-.dealBox,
+.dealBox:hover{
+  transform:scale(1.05);
+  transition:0.2s;
+  cursor:pointer;
+}
 .about-box{
   background:var(--card);
   border-radius:18px;

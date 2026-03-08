@@ -400,6 +400,18 @@ body{
   background:rgba(255,255,255,0.1);
 }
 
+#videopreview {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0;
+}
+
+#videopreview iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+}
+
 /*mobile*/
 @media (max-width:768px){
   #authPage{

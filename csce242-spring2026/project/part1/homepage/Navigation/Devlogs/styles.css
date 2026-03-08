@@ -30,6 +30,20 @@ body{
   font-size:18px;
 }
 
+/*Footer*/
+#footer{
+  margin-top:40px;
+  padding:20px;
+  text-align:center;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
 /*website*/
 #website{
   width:100%;

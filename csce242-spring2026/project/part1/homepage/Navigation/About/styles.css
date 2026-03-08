@@ -40,6 +40,11 @@ body {
   color:var(--muted);
 }
 
+.gamer{
+  height: 300px;
+  width: 400px;
+}
+
 a{
   text-decoration: none;
   color: white;

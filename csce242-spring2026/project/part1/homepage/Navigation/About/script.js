@@ -20,3 +20,16 @@ if (mobileBtn) {
     sidebar.classList.toggle("show");
   });
 }
+
+const form = document.getElementById("contactForm");
+
+if(form){
+
+form.addEventListener("submit", function(){
+
+document.getElementById("formStatus").textContent =
+"Message sent successfully!";
+
+});
+
+}

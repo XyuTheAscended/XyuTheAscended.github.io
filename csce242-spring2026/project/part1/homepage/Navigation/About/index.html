@@ -24,7 +24,6 @@
 
     <div id="pagelayout">
 
-
       <main id="maincontent">
 
         <div id="login">
@@ -56,6 +55,29 @@
             <p>Join my community and make sure you tune in to the latest news on my website for updates on new games or
               even sales!</p>
           </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section id="contactSection">
+
+          <h2>Contact Me</h2>
+
+          <form id="contactForm" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <input type="hidden" name="_captcha" value="false">
+
+            <p id="formStatus"></p>
+
+          </form>
+
         </section>
 
       </main>

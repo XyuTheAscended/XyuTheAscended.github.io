@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-fetch("../json/games.json")
+fetch("https://github.com/XyuTheAscended/XyuTheAscended.github.io/blob/main/csce242-spring2026/project/part1/homepage/json/games.json")
 .then(response => response.json())
 .then(games => {
 

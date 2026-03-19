@@ -362,6 +362,11 @@ body{
   color:var(--muted);
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 /*inputs*/
 .authForm input{
   padding:12px;
